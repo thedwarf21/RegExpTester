@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="" />
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="rs_logo.png" />
+    <title>Testeur d'expressions régulières</title>
+
+    <!-- Styles et fonts -->
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    
+    <!-- Scripts -->
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+
+  <!-- Corps de la page -->
+  <body>
+    <div class="page-wrapper">
+      <div class="field-wrapper">
+        <label for="expreg_field">Expression régulière</label>
+        <input type="text" id="expreg_field" value="" />
+      </div>
+      <div class="field-wrapper">
+        <label for="string_value">Valeur à tester</label>
+        <input type="text" id="string_value" value="" />
+      </div>
+      <button onclick="testRegExp()">
+        Tester la correspondance
+      </button>
+      <div id="result_panel"></div>
+    </div>
+  </body>
+</html>
