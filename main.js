@@ -10,8 +10,12 @@ function testRegExp() {
 			result_panel.innerHTML = "Pas de correspondance";
 		}
 	} catch (error) {
-		result_panel.className = "ko";
-		result_panel.innerHTML = "ERREUR DE SYNTAXE DANS L'EXPRESSION REGULIERE";
+		result_panel.className = "error";
+		result_panel.innerHTML = error;
+		console.log(typeof error)
+		for (let property_name in error) {
+			console.log(`${property_name}: ${error[property_name]}`);
+		}
 		console.error(error);
 	}
 }
